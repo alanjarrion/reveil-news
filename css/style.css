@@ -1,0 +1,570 @@
+
+body{
+  padding: 0;
+  
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.logo{
+  width: 15%;
+  position: absolute;
+  left: 50px;
+}
+
+  
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #b8b6f2;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  z-index: 999;
+  background-color: white;
+  
+}
+
+body h1 {
+   font-family: PT serif;
+}
+
+body h2 {
+  font-family: PT serif;
+}
+
+header nav {
+  font-size: 2em;
+}
+
+header nav ul li a{
+  color: #b8b6f2;
+  transition: 0.5s;
+}
+
+header nav ul li a:hover{
+  color: #abc4ff;
+  font-size: 34px;
+  transition: 0.5s;
+
+}
+
+h1 {
+  color: #b8b6f2;
+  
+}
+
+h2 {
+  color: black;
+}
+
+p{
+  font-family: Domine;
+}
+
+footer h1 {
+  color: black;
+  font-family: PT Serif;
+}
+
+footer h2, h3, h4 {
+  color: black;
+  font-family: PT Serif;
+  
+}
+
+header h1 {
+  font-size: 26px;
+  transition: 0.5s;
+  
+}
+ header h1:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #abc4ff;
+}
+
+header .compte,
+header .panier{
+  height: 40px;
+  width: 40px;
+  background-size: 100%;
+  background-color: unset;
+  border: 0;
+  position: absolute;
+  cursor: grab;
+}
+
+header .panier{
+  background-image: url(../img/panier.png);
+  right: 50px;
+}
+
+header .compte{
+  background-image: url(../img/se_connecter.png);
+  right: 110px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  margin-right: 80px}
+
+nav ul li:last-child{
+  margin-right: 0;
+}
+
+.banniere img{
+  width: 100%;
+  margin-top: 103px;
+  
+}
+
+.bann{ 
+  margin: 0px 0px
+}
+
+.banniere img:hover{
+  transform: none;
+  opacity: 100%;
+}
+
+.bannierebas2 img{
+  width: 100%;
+}
+
+.bannierebas2 img:hover{
+  transform: none;
+}
+
+.bannierebas img{
+
+  width: 100%;
+}
+
+.bannierebas img:hover {
+  transform: none;
+  
+}
+
+.bannierebas3 img{
+  width: 50%;
+   
+}
+
+
+.bannierebas3 .bann{
+  display: flex;
+  justify-content: center;
+}
+
+.bannierebas3 img:hover{
+  transform: none;
+  pointer-events: none;
+}
+
+
+.homepage article figure img{
+  width: 100%;
+}
+
+.homepage article figure{
+  margin: 0;
+  width: 80%;}
+
+.homepage article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reveils{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.produit-vente{
+  display: flex;
+  text-align: center;
+}
+
+figure img:hover{
+  transform: scale(1.10);
+  transition: 0.5s;
+  opacity: 85%;
+  cursor: pointer;
+
+}
+
+figure img{
+  transition: 0.5s
+}
+
+.text p {
+
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 100px
+}
+
+.text h1{
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.reveiloffert h1 {
+  margin-left: 100px;
+  margin-top:150px;
+  margin-bottom: 150px;
+}
+
+.product-grid h1{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.meilleurs-vente h1 {
+  margin-left: 100px;
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+
+.meilleurs-vente{
+
+  margin-bottom: 100px;
+}
+
+
+
+footer{
+ 
+  background-color: #abc4ff;
+  
+}
+
+footer ul{
+  padding: 0;
+
+  
+}
+
+footer ul li{
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+
+footer ul li img{
+  width: 20%;
+}
+
+
+.contenu-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+
+footer h4 {
+  text-decoration: underline;
+}
+
+
+
+.textfooter a{
+  display: block;
+  text-align: center;
+}
+
+/* PAGE PRODUIT */
+
+.pageproduit .reveiloffert .reveils{
+  display: flex;
+}
+
+.pageproduit .reveiloffert{
+  margin-top: 203px;
+}
+
+.pageproduit .reveiloffert .reveils article figure{
+  width: 80%;
+}
+
+.pageproduit .reveiloffert .reveils article img{
+  width: 100%;
+}
+
+.pageproduit .reveiloffert .reveils article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageproduit .product-grid .produit-vente{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.pageproduit .product-grid .produit-vente article img{
+  width: 100%;
+}
+
+.pageproduit .product-grid .produit-vente article figure{
+  width: 80%;
+}
+
+.pageproduit .product-grid .produit-vente article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageproduit .product-grid h1{
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.homepage .banniere p{
+
+  padding-right: 350px;
+}
+
+span {
+  font-size: 25px;
+}
+/* page produit
+zezeeeeeee
+zeeeeeeeeeeeeeeeeeeeeeeee
+zeeeeeeeeeeeeeeeeeeee
+zeeeeeeeeeeee */
+
+.un-produit .c-produit{
+  display: flex;
+  margin-top: 203px;
+  margin-bottom: 200px;
+}
+
+
+.un-produit .c-produit .photos figure{
+  width: 80%;
+  margin: 0;
+}
+.un-produit .c-produit .photos {
+  flex-basis: 50%;
+}
+
+.un-produit .c-produit .side {
+  flex-basis: 50%;
+  
+}
+
+.un-produit .photos {
+
+  margin-left: 20px
+}
+
+.un-produit .c-produit .photos figure img{
+  width: 100%;
+}
+
+.un-produit .c-produit .side p{
+  font-size: 16px;
+  padding-right: 150px;
+}
+
+.un-produit .c-produit .side span{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.un-produit .c-produit .side .pack-1 {
+  margin-top: 130px;
+  margin-right: 150px;
+}
+
+.un-produit .c-produit button {
+  
+  background-color: #abc4ff;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}
+
+.un-produit .c-produit button:hover {
+  background-color:#b8b6f2 ;
+}
+
+.un-produit button {
+  font-weight: 600;
+}
+
+
+/* CODE POUR LE FORMULAIRE DE CONNEXION 
+DDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDD*/
+
+
+form .label-connect{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.mdp {
+  padding-top: 20px;
+}
+.label-connect {
+  margin-bottom: 20px; 
+}
+.bouttonco {
+  margin-top: 10px;
+}
+
+
+.seconnecter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.logoformulaire img{
+  
+  width: 25%;
+
+}
+
+.logoformulaire {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.seconnecter a{
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+
+
+/* FORMULAIREGSG
+GSFGSDGDGSDDSGSDGS
+DGGSDGGGGGGGGGGGGGGG
+GDSSSSSSSSSSSS */
+
+
+.toutlecontenu {
+  font-size: 14px;
+  background-color: white;
+  margin-top: 203px;
+
+}
+.contenaire {
+
+  width: 80%;
+  margin: 50px auto
+}
+.contactbox{
+  background: #fff;
+  display: flex;
+}
+
+.contactgauche{
+  flex-basis: 60%;
+  padding: 0 40px 0 0;
+}
+.contactdroite{
+  flex-basis: 40%;
+  padding: 40px;
+  background: #abc4ff;
+  color: black;
+}
+
+
+.contenaire h1{
+  margin-bottom: 10px;
+}
+.contenaire p{
+  margin-bottom: 10px;
+}
+.inputrow{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.inputrow .inputgroup {
+  flex: basis 45%;
+}
+.pagecontact .toutlecontenu input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid  #ccc;
+  padding-bottom: 5px;
+}
+.pagecontact textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.labelformulaire {
+  margin-bottom: 6px;
+  display: block;
+  color: #1c00b5;
+}
+
+.buttonform{
+  background: #1c00b5;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+.contactleft h3{
+  font-weight: 600;
+  margin-bottom: 30px;
+} 
+.pagecontact tr td:first-child{
+  padding-right: 20px;
+
+}
+.pagecontact tr td {
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.pagecontact h1, h2, h3, h4 {
+
+  font-family: PT serif;
+}
